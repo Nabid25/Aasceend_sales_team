@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salesperson Profiles</title>
+  <link rel="icon" type="image/png" href="./images/logo.png">
   <style>
     * {
       box-sizing: border-box;
@@ -123,36 +124,43 @@
     
     <div class="profile-grid">
       <div class="profile-card">
-        <img src="https://via.placeholder.com/100" alt="Salesperson 1" class="profile-image">
+        <img src="./images/senior_sales.png" alt="Salesperson 1" class="profile-image">
         <div class="profile-name">Md Kobir</div>
         <div class="profile-title">Senior Sales</div>
         <div class="button-group">
-            <button class="profile-btn-form">Forms</button>
-            <button class="profile-btn-sheets">Google sheets</button>
+            <button class="profile-btn-form" onclick="openProfile('https://forms.gle/iBJFTuoSHN1QjH669')">Forms</button>
+            <button class="profile-btn-sheets" onclick="openProfile('https://docs.google.com/spreadsheets/d/1zY5uEPAh8bUfAkbHDRbELDgwhRZP4j_U/edit?usp=sharing&ouid=113670342495033790412&rtpof=true&sd=true')">Google sheets</button>
         </div>
       </div>
       <div class="profile-card">
-        <img src="https://via.placeholder.com/100" alt="Salesperson 2" class="profile-image">
+        <img src="./images/sales_girl1.jpg" alt="Salesperson 2" class="profile-image">
         <div class="profile-name">Tanzina</div>
         <div class="profile-title">Sales</div>
-        <button class="profile-btn-form">Forms</button>
-        <button class="profile-btn-sheets">Google sheets</button>
+        <button class="profile-btn-form" onclick="openProfile('https://forms.gle/iBJFTuoSHN1QjH669')">Forms</button>
+        <button class="profile-btn-sheets" onclick="openProfile('https://docs.google.com/spreadsheets/d/1OamrDTEmIywjV-NxJGY_TOk4HZGB-3hY/edit?usp=sharing&ouid=113670342495033790412&rtpof=true&sd=true')">Google sheets</button>
       </div>
       <div class="profile-card">
-        <img src="https://via.placeholder.com/100" alt="Salesperson 3" class="profile-image">
+        <img src="./images/2.jpg" alt="Salesperson 3" class="profile-image">
         <div class="profile-name">Md Kamrul Isalam</div>
         <div class="profile-title">Sales</div>
-        <button class="profile-btn-form">Forms</button>
-        <button class="profile-btn-sheets">Google sheets</button>
+        <button class="profile-btn-form"  onclick="openProfile('https://forms.gle/iBJFTuoSHN1QjH669')">Forms</button>
+        <button class="profile-btn-sheets" onclick="openProfile('https://docs.google.com/spreadsheets/d/1XEqekaJ9_Vv7omYrssHekIY7dKbnbwOr/edit?usp=sharing&ouid=113670342495033790412&rtpof=true&sd=true')">Google sheets</button>
       </div>
       <div class="profile-card">
-        <img src="https://via.placeholder.com/100" alt="Salesperson 4" class="profile-image">
+        <img src="./images/sales_girl2.jpg" alt="Salesperson 4" class="profile-image">
         <div class="profile-name">Drishti</div>
         <div class="profile-title">Sales</div>
-        <button class="profile-btn-form">Forms</button>
-        <button class="profile-btn-sheets">Google sheets</button>
+        <button class="profile-btn-form" onclick="openProfile('https://forms.gle/iBJFTuoSHN1QjH669')">Forms</button>
+        <button class="profile-btn-sheets" onclick="openProfile('https://docs.google.com/spreadsheets/d/1sgf-tKpZXagZAgHt_Lg1QT-e38H_uQR3/edit?usp=sharing&ouid=113670342495033790412&rtpof=true&sd=true')">Google sheets</button>
       </div>
     </div>
   </div>
+  <script>
+    function openProfile(url) {
+      window.open(url, '_blank'); // '_blank' opens in a new tab/window
+    }
+  </script>
+  
 </body>
+
 </html>
