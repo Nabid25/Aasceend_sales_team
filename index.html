@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salesperson Profiles</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    h1,h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .profile-btn-sheets {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #34A853;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .profile-btn-sheets:hover {
+      background-color: #34A853;
+    }
+
+    .profile-btn-form {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #7248B9;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .profile-btn-form:hover {
+      background-color: #7248B9;
+    }
+
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-title {
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .profile-card {
+        padding: 15px;
+      }
+
+      .profile-name {
+        font-size: 1rem;
+      }
+
+      .profile-title {
+        font-size: 0.85rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aasceend</h1>
+    <h2>Sales Team</h2>
+    
+    <div class="profile-grid">
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Salesperson 1" class="profile-image">
+        <div class="profile-name">Md Kobir</div>
+        <div class="profile-title">Senior Sales</div>
+        <div class="button-group">
+            <button class="profile-btn-form">Forms</button>
+            <button class="profile-btn-sheets">Google sheets</button>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Salesperson 2" class="profile-image">
+        <div class="profile-name">Tanzina</div>
+        <div class="profile-title">Sales</div>
+        <button class="profile-btn-form">Forms</button>
+        <button class="profile-btn-sheets">Google sheets</button>
+      </div>
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Salesperson 3" class="profile-image">
+        <div class="profile-name">Md Kamrul Isalam</div>
+        <div class="profile-title">Sales</div>
+        <button class="profile-btn-form">Forms</button>
+        <button class="profile-btn-sheets">Google sheets</button>
+      </div>
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Salesperson 4" class="profile-image">
+        <div class="profile-name">Drishti</div>
+        <div class="profile-title">Sales</div>
+        <button class="profile-btn-form">Forms</button>
+        <button class="profile-btn-sheets">Google sheets</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
